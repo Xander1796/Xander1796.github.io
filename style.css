@@ -755,7 +755,8 @@ button {
     }
    
    .playbtnNotReady {
-       font-size: 1rem;
+       font-size: .8rem;
+       padding: 5px 17px;
    }
    .firstPage {
        overflow: hidden;
