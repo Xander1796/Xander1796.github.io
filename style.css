@@ -721,12 +721,42 @@ button {
         align-self: center;
     }
     .imgSize {
-        width: 30vw;
-        height: 30vh;
+        width: 20vw;
+        height: 20vh;
     }
     .chooseCharacterH1{
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
+    .player1Home img {
+    width: 60%;
+    height: 80%;
+}
+    .player2Home img {
+    width: 60%;
+    height: 80%;
+}
+    .playbtnNotReady {
+    font-size: 1.2rem;
+    border-radius: 50rem;
+    padding: 8px 25px;
+}
+    .playbtnAppearance {
+    font-size: 1.2rem;
+    border-radius: 50rem;
+    padding: 8px 25px;
+}
+    .wholeGame {
+    height: 85vh;
+    width: 85vw;
+}
+    .newGame {
+     font-size: 1.2rem;
+     padding: 10px 22px;  
+    }
+    .roll,.hold {
+    padding: 10px 19px;
+    font-size: .9rem;
+}
 }
 
 @media (max-width:600px) {
