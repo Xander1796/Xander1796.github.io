@@ -578,7 +578,6 @@ button {
     justify-content: space-around;
     align-items: center;
     overflow: hidden;
-    width: 100vh;
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     border-radius: 5px;
