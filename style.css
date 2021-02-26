@@ -635,9 +635,6 @@ button {
     animation: playbtnNotReady 1s ease;
 }
 
-.chooseCharacterH1Div,.playbtnNotReady {
- width: 100vw;
-}
 
 @keyframes playbtnNotReady {
     0% {
@@ -763,10 +760,12 @@ button {
        padding: 5px 17px;
    }
    .firstPage {
+       justify-content: space-around;
        overflow: hidden;
    }
    .playbtnAppearance {
-    font-size: 1rem;
+    font-size: .8rem;
+    padding: 5px 17px;
    }
    .playersHomeContainer {
     justify-content: space-between;
