@@ -579,11 +579,7 @@ button {
     height: 100vh;
     width: 100vw;
     border-radius: 5px;
-    position: absolute;
     background: #112d4e;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 20;
 }
 
