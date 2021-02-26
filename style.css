@@ -820,6 +820,7 @@ button {
   }
    .rolldicehold {
     display: flex;
+    justify-self: start;
   }
   .current1,.current2 {
       font-size: .7rem;
