@@ -496,6 +496,9 @@ function newGameButtonFirst() {
 
 
 function newGameButtonSecond() {
+     for(let i = 0; i < diceArray.length; i++) {
+        diceArray[i].classList.remove('hidden');
+       }
     lose30.classList.remove('lose30Points');
     lose30.textContent = '';
     wholeGame.classList.remove('wholeGameVisibility');
