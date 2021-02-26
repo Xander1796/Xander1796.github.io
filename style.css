@@ -5,6 +5,7 @@ body {
     background: #112d4e;
     min-width: 100vh;
     min-height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     overflow: hidden;
 }
 
@@ -582,6 +583,7 @@ button {
     overflow: hidden;
     min-width: 100vh;
     min-height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     border-radius: 5px;
     background: #112d4e;
     z-index: 20;
