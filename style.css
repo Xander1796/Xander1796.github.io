@@ -635,6 +635,10 @@ button {
     animation: playbtnNotReady 1s ease;
 }
 
+.chooseCharacterH1Div,.playbtnNotReady {
+ width: 100vw;
+}
+
 @keyframes playbtnNotReady {
     0% {
         transform: translateX(-4px);
