@@ -754,8 +754,8 @@ button {
     .imgSize {
         justify-self: center;
         align-self: center;
-        width: 15vw;
-        height: 12vh;
+        width: 20vw;
+        height: 15vh;
     }
    
    .playbtnNotReady {
@@ -771,12 +771,12 @@ button {
     justify-content: space-between;
    }
    .player1Home img {
-    width: 20vw;
-    height: 15vh;
+    width: 15vw;
+    height: 12vh;
    }
    .player2Home img {
-    width: 20vw;
-    height: 15vh;
+    width: 15vw;
+    height: 12vh;
    }
    .diceBodyTrap1,.diceBodyTrap2,.diceBody1,.diceBody2,.diceBody3,.diceBody4,.diceBody5,.diceBody6 {
        height: 40px;
