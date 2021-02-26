@@ -804,7 +804,6 @@ button {
        margin-bottom: 25%;
        bottom: 0;
        padding: 5px;
-       min-width: 80%;
    }
    .roll,.hold {
        padding: 4px 9px;
@@ -826,7 +825,7 @@ button {
        font-size: 25px;
    }
    .fa-wolf-pack-battalion{
-      font-size: 25px;
+      font-size: 20px;
    }
    .power {
        left: 150%;
