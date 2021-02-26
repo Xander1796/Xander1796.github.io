@@ -3,9 +3,6 @@ body {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     background: #112d4e;
-    width: 100vh;
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
     overflow: hidden;
 }
 
