@@ -776,6 +776,13 @@ button {
     .firstPage{
         height: calc(var(--vh, 1vh) * 100);
     }
+     .rolldicehold {
+    display: flex;
+    align-self: start;
+  }
+    .roll {
+  margin-right: 7px;
+}
 }
 
 @media (max-width:685px) {
