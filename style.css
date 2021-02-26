@@ -18,7 +18,6 @@ body {
 }
 
 .wholeGame {
-    display: none;
     display: flex;
     height: 85vh;
     width: 65vw;
