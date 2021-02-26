@@ -775,8 +775,8 @@ button {
     height: 12vh;
    }
    .player2Home img {
-    width: 50%;
-    height: 50%;
+    width: 15vw;
+    height: 12vh;
    }
    .diceBodyTrap1,.diceBodyTrap2,.diceBody1,.diceBody2,.diceBody3,.diceBody4,.diceBody5,.diceBody6 {
        height: 40px;
