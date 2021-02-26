@@ -760,7 +760,7 @@ button {
        padding: 5px 17px;
    }
    .firstPage {
-       justify-content: space-around;
+       justify-content: center;
        overflow: hidden;
    }
    .playbtnAppearance {
