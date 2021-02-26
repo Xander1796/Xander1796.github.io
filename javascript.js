@@ -1,5 +1,5 @@
 let vh = window.innerHeight * 0.01;
-document.documentElement.setProperty('--vh', `${vh}px`);
+document.documentElement.style.setProperty('--vh', `${vh}px`);
 let buttonCoco = document.querySelector('.buttonCoco');
 let wholeGame = document.querySelector('.wholeGame');
 let lose30 = document.querySelector('.lose30');
