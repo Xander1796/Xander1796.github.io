@@ -579,7 +579,6 @@ button {
     align-items: center;
     overflow: hidden;
     height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
     border-radius: 5px;
     background: #112d4e;
     z-index: 20;
@@ -753,6 +752,10 @@ button {
         align-self: center;
         width: 20vw;
         height: 15vh;
+    }
+    
+    .firstPage{
+        height: calc(var(--vh, 1vh) * 100);
     }
    
    .playbtnNotReady {
