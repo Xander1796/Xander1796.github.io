@@ -803,12 +803,12 @@ button {
    .currentScoreContainer1,.currentScoreContainer2 {
        margin-bottom: 25%;
        bottom: 0;
-       padding: 10px;
+       padding: 5px;
        min-width: 80%;
    }
    .roll,.hold {
-       padding: 6px 13px;
-       font-size: .9rem;
+       padding: 4px 9px;
+       font-size: .7rem;
    }
    .hold {
        margin-top: 12px;
@@ -817,10 +817,10 @@ button {
     align-self: start;
   }
   .current1,.current2 {
-      font-size: 1rem;
+      font-size: .7rem;
   }
    .currentScore1,.currentScore2 {
-       font-size: 1.3rem;
+       font-size: .9rem;
    }
    .fa-skull-crossbones {
        font-size: 25px;
