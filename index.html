@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+</head>
+<body>
+    <div class="backgroundPhoto"></div>
+    <div class="firstPage">
+        <h1 class="chooseCharacterH1">Player 1 : Choose your character!</h1>
+        <div class="chooseCharacter1">
+                <img src="Geralt.png" alt="" class= "geraltStart imgSize ">
+                <img src="Yennefer.png" alt="" class="yennStart imgSize">
+                <img src="Triss.png" alt="" class="trissStart imgSize">
+                <img src="Ciri.png" alt="" class= "ciriStart imgSize">
+                <img src="Dandelion.png" alt="" class= "dandelionStart imgSize">
+                <!--<img src="Vesemir.png" alt="" class= "vesemirStart imgSize">-->
+        </div>
+        <div class="playersHomeContainer">
+            <div class="player1Home"> <img src="claw.png" class="player1ImgHome"></div>
+            <h2 class="versus">Vs</h2>
+            <div class="player2Home"><img src="claw.png"  class="player2ImgHome"></div>
+        </div>
+        <button class="playbtnAppearance playbtn">Play</button>
+    </div>
+    
+   <div class="wholeGame">
+       <div class="player1">
+           <div class="player1div">
+            <h1 class="h1Player1"></h1>
+            <h2 class="h2Player1">0</h2>
+           </div>
+           <div class="geralt"> <img  alt="" class="player1Image"></div>
+           <div class="currentScoreContainer1">
+               <p class="current1">CURRENT</p>
+               <p class="currentScore1">0</p>
+               <i class="fab fa-wolf-pack-battalion wolf1">
+                <span class="power">(P)</span>
+               </i>
+           </div>
+       </div>
+
+       <div class="player2">
+           <div class="player2div">
+            <h1 class="h1Player2"></h1>
+            <h2 class="h2Player2">0</h2>
+           </div>
+           <div class="ciri"><img  alt="" class="player2Image"></div>
+           <div class="currentScoreContainer2">
+            <p class="current2">CURRENT</p>
+            <p class="currentScore2">0</p>
+            <i class="fab fa-wolf-pack-battalion wolf2">
+                <span class="power">(P)</span></i>
+           </div>
+       </div>
+
+       <div class="options">
+        <button class="newGame btn-active">New Game</button>
+         <div class="dices">
+
+         <div class="diceBody1 shadowDice">
+            <div class="diceCenter diceSize"></div>  
+         </div>
+          
+         <div class="diceBodyTrap1 shadowDice">
+             <div><i class="fas fa-skull-crossbones"></i></div>
+         </div>
+
+         <div class="diceBodyTrap2 shadowDice">
+            <div><i class="fas fa-skull-crossbones"></i></div>
+         </div>
+      
+          <div class="diceBody2 shadowDice">
+              <div class="dice2LeftTop diceSize"></div>
+              <div class="dice2RightBottom diceSize"></div>
+          </div>
+  
+          <div class="diceBody3 shadowDice">
+              <div class="dice2LeftTop diceSize"></div>
+              <div class="diceCenter diceSize"></div>
+              <div class="dice2RightBottom diceSize"></div>
+          </div>
+  
+          <div class="diceBody4 shadowDice">
+              <div class="dice2LeftTop diceSize"></div>
+              <div class="dice2LeftBottom diceSize"></div>
+              <div class="dice2RightTop diceSize"></div>
+              <div class="dice2RightBottom diceSize"></div>
+          </div>
+  
+          <div class="diceBody5 shadowDice">
+              <div class="dice5LeftTop diceSize"></div>
+              <div class="dice5LeftBottom diceSize"></div>
+              <div class="dice5RightTop diceSize"></div>
+              <div class="dice5Center diceSize"></div>
+              <div class="dice5RightBottom diceSize"></div>
+          </div>
+  
+          <div class="diceBody6 shadowDice">
+              <div class="dice6LeftTop diceSize"></div>
+              <div class="dice6LeftCenter diceSize"></div>
+              <div class="dice6LeftBottom diceSize"></div>
+              <div class="dice6RightTop diceSize"></div>
+              <div class="dice6RightCenter diceSize"></div>
+              <div class="dice6RightBottom diceSize"></div>
+          </div>
+          <p class="playerBegins"></p>
+          <p class="playerBegins2"></p>
+          <p class="lose30"></p>
+     </div>
+     <div class="rolldicehold">
+        <button type="button" class="roll btn-active">ROLL(R)</button>
+        <button type="button" class="hold btn-active">KEEP(K)</button>
+     </div>
+    </div>
+    <div class="winningPlayer1"></div>
+
+    <div class="winningPlayer1Overlay">
+       <h1 class="h1HasWon"></h1>
+       <img class="winnerImg">
+       <button class="playAgain btn-active">Play Again</button>
+    </div>
+ <img src="wolfImage.png" alt="" class="wild">
+    <script src="javascript.js"></script>
+</body>
+</html>

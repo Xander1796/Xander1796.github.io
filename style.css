@@ -1,0 +1,901 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #112d4e;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wholeGame {
+    visibility: hidden;
+    display: flex;
+    height: 85vh;
+    width: 65vw;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+.wholeGameVisibility {
+    visibility: visible;
+}
+
+.player1,.player2 {
+    background: #dbe2ef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    opacity: .4;
+}
+
+.player1 {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 5px 0 0 5px;
+}
+
+.player2 {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0 5px 5px 0;
+}
+
+.player1div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1Player1,.h1Player2 {
+    color: #222831;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.h2Player1,.h2Player2 {
+    font-size: 4rem;
+    color: #112d4e;
+}
+
+.player2div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.currentScoreContainer1,.currentScoreContainer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #112d4e;
+    border-radius: 5px;
+    padding: 20px 70px;
+}
+
+.current2,.current1 {
+    margin-bottom: 10px;
+    color: #dbe2ef;
+}
+
+.currentScore1,.currentScore2 {
+    font-size: 2.5rem;
+    color: #f9f7f7;
+}
+
+
+
+button:hover {
+    opacity: .9;
+}
+
+.diceBodyTrap1,.diceBodyTrap2 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: white;
+}
+
+.diceBody1 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: white;
+}
+
+.diceSize {
+    width: 20px;
+    height: 20px;
+    background: #112D4E;
+    border-radius: 50%;
+}
+
+.diceBody2 {
+    position: absolute;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    height: 100px;
+    background: white;
+}
+
+.dice2RightBottom {
+    align-self: flex-end;
+}
+
+.diceBody3 {
+    position: absolute;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    height: 100px;
+    background: white;
+}
+
+.diceCenter {
+    align-self: center;
+}
+
+.diceBody4 {
+    position: absolute;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: white;
+}
+
+.dice2RightTop {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: end;
+}
+
+.dice2RightBottom {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-self: end;
+}
+
+.dice2LeftBottom {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    align-self: end;
+}
+
+.diceBody5 {
+    position: absolute;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: white;
+}
+
+.dice5Center {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    justify-self: center;
+    align-self: center;
+}
+
+.dice5LeftBottom {
+    grid-row: 3 / 4;
+    align-self: end;
+}
+
+.dice5RightTop {
+    grid-column: 3 / 4;
+    justify-self: end;
+}
+
+.dice5RightBottom {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+    justify-self: end;
+    align-self: end;
+}
+
+.diceBody6 {
+    position: absolute;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100px;
+    height: 100px;
+    background: white;
+}
+
+.dice6LeftBottom {
+    grid-row: 3 / 4;
+    align-self: end;
+    justify-self: start;
+}
+
+.dice6LeftCenter {
+    grid-row: 2 / 3;
+    justify-self: start;
+    align-self: center;
+}
+
+.dice6RightTop {
+    grid-column: 3 / 4;
+    justify-self: end;
+}
+
+.dice6RightCenter {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    justify-self: end;
+    align-self: center;
+}
+
+.dice6RightBottom {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    justify-self: end;
+    align-self: end;
+}
+
+.dices {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.shadowDice {
+    background: #dbe2ef;
+    backdrop-filter: blur(10px);
+    box-shadow: 4px 4px 20px #112d4e;
+}
+
+.options {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.roll,.hold {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 50rem;
+    outline: none;
+    border: none;
+    padding: 10px 40px;
+    background: #3f72af;
+    color: #f9f7f7;
+}
+
+.hold  {
+    margin-top: 17px;
+}
+
+.roll {
+    padding: 10px 25px;
+}
+
+.rolldicehold {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+}
+
+.newGame {
+    margin-top: 30px;
+    align-self: start;
+    justify-self: center;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    border-radius: 50rem;
+    padding: 10px 35px;
+    background: #3f72af;
+    color: #f9f7f7;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+
+.hidden {
+    visibility: visible;
+}
+
+.player1Javascript {
+    transition: .7s ease;
+    opacity: 1;
+}
+
+.player2Javascript {
+    transition: .7s ease;
+    opacity: 1;
+}
+
+.fa-skull-crossbones { 
+  color: #112d4e;
+  font-size: 70px;
+}
+
+.fa-wolf-pack-battalion {
+    font-size: 50px;
+    position: relative;
+    color: #eeeeee;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.power {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    left: 130%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.2rem;
+}
+
+.fab2 {
+  z-index: 0;
+  opacity: .3;
+  animation: fab2anim 1s ease-out;
+}
+
+@keyframes fab2anim {
+    0% {
+        opacity: 1;
+
+    }
+    100% {
+        opacity: .3;
+    }
+}
+
+.fa-wolf-pack-battalion:hover {
+    opacity: .9;
+}
+
+.wild{
+    opacity: 0;
+    position: absolute;
+    z-index: 10;
+    color: white;
+    padding: 10px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    height: 30%;
+}
+
+.lose30Points {
+    position: absolute;
+    top: -52%;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 1.1rem;
+    align-self: center;
+    font-weight: bold;
+    animation: losepoints 2s ease-out;
+}
+
+@keyframes losepoints {
+    0% {
+        visibility: visible;
+    }
+    50% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+.wolfAnimation {
+    animation: woolfie 2s ease-out;
+}
+
+@keyframes woolfie {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.burn {
+    animation: burning 2s ease-out;
+}
+
+@keyframes burning {
+    0% {
+        color: #eeeeee;
+        padding: 10px 50px;
+        background: #e25822;
+        opacity: 0;
+    }
+    100%{
+        padding: 10px 50px;
+        color: #eeeeee;
+        background: #e25822;
+        opacity: 1;
+    }
+}
+
+.player1Image {
+    width: 56%;
+    height: 250px;
+}
+
+.player2Image  {
+    width: 56%;
+    height: 250px;
+}
+
+.geralt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ciri {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.begin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.playAgain {
+    font-family: 'Cinzel Decorative', cursive;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    border-radius: 50rem;
+    padding: 10px 25px;
+    background: #222831;
+    color: #f9f7f7;
+    opacity: 1;
+}
+
+.pressToStart {
+  animation: presstostart 2s ease infinite;
+}
+
+@keyframes presstostart {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.h1HasWon {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #222831;
+    font-size: 2rem;
+    opacity: 1;
+}
+
+.winningPlayer1 {
+  visibility: hidden;
+  background: #dbe2ef;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  opacity: .95;
+}
+
+
+.winningPlayer1Overlay {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 85vh;
+  width: 65vw;
+}
+
+.hiddenWinning {
+    visibility: visible;
+}
+
+.winnerImg {
+    width: 45%;
+    height: 45%;
+}
+
+.whoBegins {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 1.1rem;
+    align-self: center;
+    font-weight: bold;
+    animation: gameBeginning 3s ease-out;
+}
+
+
+@keyframes gameBeginning {
+    0% {
+        visibility: visible;
+    }
+    50% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+.firstPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    border-radius: 5px;
+    position: absolute;
+    background: #112d4e;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+}
+
+.hiddenFirstPage {
+    visibility: hidden;
+}
+
+.chooseCharacter1 {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+ .imgSize {
+    opacity: .5;
+    cursor: pointer;
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.imgAppearance {
+    opacity:1;
+    transform: scale(1.2);
+}
+
+.playbtnAppearance {
+    font-family: 'Cinzel Decorative', cursive;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    border-radius: 50rem;
+    padding: 10px 35px;
+    background: #dbe2ef;
+    color: #222831;
+    z-index: 21;
+}
+
+.playbtnNotReady {
+    font-family: 'Cinzel Decorative', cursive;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    border-radius: 50rem;
+    padding: 10px 35px;
+    background: #dbe2ef;
+    color: #222831;
+    z-index: 21;
+}
+
+.playbtnNotReady:hover {
+    animation: playbtnNotReady 1s ease;
+}
+
+@keyframes playbtnNotReady {
+    0% {
+        transform: translateX(-4px);
+    }
+    
+    20% {
+        transform: translateX(4px);
+    }
+    
+    40% {
+        transform: translateX(-4px);
+    }
+    
+    50% {
+        transform: translateX(4px);
+    }
+    
+    70% {
+        transform: translateX(-4px);
+    }
+    
+    90% {
+        transform: translateX(4px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.chooseCharacterH1 {
+    font-family: 'Cinzel Decorative', cursive;
+    z-index: 21;
+    color: #dbe2ef;
+}
+
+.player1Home , .player2Home {
+    width: 170px;
+    height: 170px;
+}
+
+.versus {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    font-family: 'Cinzel Decorative', cursive;
+    color: #dbe2ef;
+    margin:0 20px;
+}
+
+.playersHomeContainer {
+    justify-content: center;
+    display: flex;
+    width: 100vw;
+}
+
+.player1Home img {
+    width: 65%;
+    height: 85%;
+}
+
+.player2Home img {
+    width: 65%;
+    height: 85%;
+}
+
+.player2Home,.player1Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:1350px) {
+    .chooseCharacter1 {
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+    }
+    .dandelionStart,.ciriStart {
+        grid-column: span 3;
+        justify-self: center;
+    }
+    .geraltStart,.yennStart,.trissStart {
+        grid-column: span 2;
+        justify-self: center;
+        align-self: center;
+    }
+    .imgSize {
+        width: 30vw;
+        height: 30vh;
+    }
+    .chooseCharacterH1{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width:600px) {
+    .chooseCharacterH1{
+        font-size: 0.7rem;
+    }
+
+    .chooseCharacter1 {
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+    }
+    .dandelionStart,.ciriStart {
+        grid-column: span 3;
+        justify-self: center;
+    }
+    .geraltStart,.yennStart,.trissStart {
+        grid-column: span 2;
+        justify-self: center;
+        align-self: center;
+    }
+    .imgSize {
+        justify-self: center;
+        align-self: center;
+        width: 30vw;
+        height: 20vh;
+    }
+   
+   .playbtnNotReady {
+       font-size: 1rem;
+   }
+   .firstPage {
+       overflow: hidden;
+   }
+   .playbtnAppearance {
+    font-size: 1rem;
+   }
+   .playersHomeContainer {
+    justify-content: space-between;
+   }
+   .player1Home img {
+    width: 50%;
+    height: 50%;
+   }
+   .player2Home img {
+    width: 50%;
+    height: 50%;
+   }
+   .diceBodyTrap1,.diceBodyTrap2,.diceBody1,.diceBody2,.diceBody3,.diceBody4,.diceBody5,.diceBody6 {
+       height: 40px;
+       width: 40px;
+       padding: 5px;
+   }
+   
+   .diceSize {
+       width: 8px;
+       height: 8px;
+   }
+   .player1,.player2 {
+       display: flex;
+       justify-content: space-between;
+   }
+   .player1div,.player2div {
+    margin-top: 25%;
+    align-self: center;
+}
+   .player1Image,.player2Image {
+       height: 150px;
+       width: 70%;
+   }
+   .currentScoreContainer1,.currentScoreContainer2 {
+       margin-bottom: 25%;
+       bottom: 0;
+       padding: 10px;
+       min-width: 80%;
+   }
+   .roll,.hold {
+       padding: 6px 13px;
+       font-size: .9rem;
+   }
+   .hold {
+       margin-top: 12px;
+   }
+   .rolldicehold {
+    align-self: start;
+  }
+  .current1,.current2 {
+      font-size: 1rem;
+  }
+   .currentScore1,.currentScore2 {
+       font-size: 1.3rem;
+   }
+   .fa-skull-crossbones {
+       font-size: 25px;
+   }
+   .fa-wolf-pack-battalion{
+      font-size: 25px;
+   }
+   .power {
+       left: 150%;
+       font-size: .5rem;
+   }
+   .wild {
+       width: 45%;
+       height: 25%;
+       left: 50%;
+       top: 32%;
+       transform: translate(-50%,-50%);
+   }
+   @keyframes burning {
+    0% {
+        color: #eeeeee;
+        padding: 5px 25px;
+        background: #e25822;
+        opacity: 0;
+    }
+    100%{
+        padding: 5px 25px;
+        color: #eeeeee;
+        background: #e25822;
+        opacity: 1;
+    }
+}
+   .lose30Points {
+       font-size: .6rem;
+       top: -45%;
+   } 
+   .whoBegins {
+       position: absolute;
+       top: 0%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+       font-size: .55rem;
+   }
+   .h1HasWon {
+       font-size: .9rem;
+   }
+   .winnerImg {
+    width: 70%;
+    height: 35%;
+}
+.playAgain {
+    font-size: .8rem;
+    padding: 7px 15px;
+}
+   .versus {
+       font-size: 1.2rem;
+   }
+   .wholeGame {
+    height: 80vh;
+    width: 85vw;
+}
+.h1Player1,.h1Player2 {
+    font-size: 1rem;
+}
+.h2Player1,.h2Player2 {
+    font-size: 1.4rem;
+}
+.newGame {
+    font-size: .9rem;
+    padding: 6px 13px;
+    margin-top: 5px;
+}
+}
+
+
+
+
+  
