@@ -3,12 +3,9 @@ body {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     background: #112d4e;
-    width: 100vw;
-    height: 100vh;
-    max-width: 100%;
-    max-height: 100%;
+    min-width: 100vh;
+    min-height: 100vh;
     overflow: hidden;
-    min-height: -webkit-fill-available;
 }
 
 
@@ -582,15 +579,12 @@ button {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
     overflow: hidden;
-    max-width: 100%;
-    max-height: 100%;
+    min-width: 100vh;
+    min-height: 100vh;
     border-radius: 5px;
     background: #112d4e;
     z-index: 20;
-    min-height: -webkit-fill-available;
 }
 
 .hiddenFirstPage {
