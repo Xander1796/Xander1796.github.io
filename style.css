@@ -632,7 +632,6 @@ button {
     padding: 10px 35px;
     background: #dbe2ef;
     color: #222831;
-    z-index: 21;
 }
 
 .playbtnNotReady:hover {
@@ -671,7 +670,6 @@ button {
 
 .chooseCharacterH1 {
     font-family: 'Cinzel Decorative', cursive;
-    z-index: 21;
     color: #dbe2ef;
 }
 
