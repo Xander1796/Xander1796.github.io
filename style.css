@@ -759,6 +759,25 @@ button {
 }
 }
 
+@media (max-width:800px) {
+  .newGame {
+     font-size: 1rem;
+     padding: 8px 20px;  
+    }
+    .h1Player1,.h1Player2 {
+    font-size: 1.3rem;
+}
+    .h2Player1, .h2Player2 {
+    font-size: 2.8rem;
+}
+    .currentScoreContainer1, .currentScoreContainer2 {
+  padding: 10px 40px;
+}
+    .firstPage{
+        height: calc(var(--vh, 1vh) * 100);
+    }
+}
+
 @media (max-width:600px) {
     .chooseCharacterH1{
         font-size: 0.7rem;
