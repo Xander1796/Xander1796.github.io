@@ -760,7 +760,6 @@ button {
        padding: 5px 17px;
    }
    .firstPage {
-       justify-content: center;
        overflow: hidden;
        max-width: 100%;
        max-height: 100%;
