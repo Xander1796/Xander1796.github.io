@@ -809,12 +809,15 @@ button {
        min-width: 80%;
    }
    .roll,.hold {
-       padding: 4px 9px;
-       font-size: .7rem;
+       padding: 6px 12px;
+       font-size: 1rem;
    }
    .hold {
-       margin-top: 12px;
+       margin-top: 0;
    }
+    .roll {
+        margin-right: 7px;
+  }
    .rolldicehold {
     display: flex;
   }
