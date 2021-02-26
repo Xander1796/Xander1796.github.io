@@ -816,7 +816,7 @@ button {
        margin-top: 12px;
    }
    .rolldicehold {
-    display: none;
+    display: flex;
   }
   .current1,.current2 {
       font-size: .7rem;
