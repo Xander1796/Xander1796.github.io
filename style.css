@@ -18,7 +18,7 @@ body {
 }
 
 .wholeGame {
-    display: flex;
+    visibility: hidden;
     height: 85vh;
     width: 65vw;
     border-radius: 5px;
