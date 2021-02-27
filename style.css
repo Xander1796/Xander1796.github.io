@@ -17,7 +17,6 @@ body {
     visibility: hidden;
     display: flex;
     height: 100%;
-    border-radius: 5px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -952,7 +951,7 @@ button {
 .newGame {
     font-size: .7rem;
     padding: 4px 9px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 }
 
