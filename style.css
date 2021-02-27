@@ -770,6 +770,9 @@ button {
     .firstPage{
         height: calc(var(--vh, 1vh) * 100);
     }
+    .wholeGame {
+     height: calc(var(--vh, 1vh) * 100);
+}
      .rolldicehold {
     display: flex;
     align-self: start;
@@ -807,6 +810,10 @@ button {
     .firstPage{
         height: calc(var(--vh, 1vh) * 100);
     }
+    
+    .wholeGame {
+     height: calc(var(--vh, 1vh) * 100);
+}
    
    .playbtnNotReady {
        font-size: .8rem;
