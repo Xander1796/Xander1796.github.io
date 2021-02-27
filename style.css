@@ -780,7 +780,7 @@ button {
     display: flex;
     align-self: start;
   }
-    .roll {
+    .roll,.hold {
   margin-right: 7px;
 }
 }
