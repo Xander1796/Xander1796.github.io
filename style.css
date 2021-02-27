@@ -17,11 +17,8 @@ body {
     visibility: hidden;
     display: flex;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background: white;
 }
 
@@ -777,9 +774,13 @@ button {
     display: flex;
     align-self: start;
   }
-    .roll,.hold {
+    .roll {
   margin-right: 7px;
 }
+    .roll,.hold {
+       padding: 8px 14px;
+       font-size: .8rem;
+   }
 }
 
 @media (max-width:685px) {
